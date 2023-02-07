@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>display CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- tag <div> dan <span> tidak memiliki arti apapun keduanya digunakan untuk mengelompokkan tag-tag HTML dan memberikan informasi terhadap tag-tag tersebut-->
+        <!-- tag <div> memiliki value default display ialah block -->
+        <!-- tag <span> memiliki value default display ialah inline -->
+
+    <!-- setiap elemen html memiliki nilai default display untuk properti display. tetapi kita juga dapat mengubah prilaku dari tag tersebut dengan mengganti value-nya -->
+    <!-- value display didalam html ada 4 yaitu : inline, inline-block, block, dan none -->
+        <!-- inline > 
+        - elemen html yang secara default tidak menambahkan baris baru ketika dibuat;
+        - lebar dan tinggi elemennya sebesar konten yang ada di dalamnya;
+        - kita tidak dapat mengatur tinggi dan lebar dari elemen inline terkecuali elemen/tag img;
+        - margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal.
+        ini adalah elemen/tag html yang memiliki dafault value display inline : b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea, img dsb... -->
+        <!-- inline-block
+        - tidak ada elemen/tag html yang secara default memiliki properti display : inline-block;
+        - kita harus ubah secara manual properti tersebut;
+        - perilaku dasarnya sama dengan display inline;
+        - perbedaannya, display inline-block dapat kita atur tinggi dan lebar-nya-->
+        <!-- block
+        - display yang secara default menambahkan baris baru ketika dibuat;
+        - jika tidak diatur lebar-nya, maka lebarnya default dari elemen yang memiliki value display block akan memenuhi lebar dari browser/parent/pembungkus-nya;
+        - kita dapat mengatur tinggi dan lebar dari elemen yang memiliki value display block;
+        - didalam elemen yang miliki value display block, kita dapat menyimpan elemen/tag dengan value display inline, inline-block, atau bahkan value display block lagi.
+        ini adalah elemen/tag html yang memiliki default value display block : h1-h6, p, ol, ul, li, form, hr, div, dsb ...-->
+        <!-- none adalah properti display yang digunakan untuk menghilangkan konten -->
+
+    <div class="header">
+        <h1>Selamat Datang Di Website Kami</h1>
+    </div>
+
+    <div class="navigasi">
+        <h2>Daftar Link</h2>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 1</a></li>
+    </div>
+
+    <div class="main">
+        <h2>Judul Artikel</h2>
+    <img src="../../1. HTML/latihan7/img/vangoghmuseum.jpg" width="200px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga nostrum quia, sit neque facere provident  <span>dolorem totam aut quibusdam explicabo</span> ipsum reiciendis odit voluptas suscipit sint consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quod tempora nesciunt cum veniam ex, culpa, necessitatibus aut laborum nihil quisquam et aliquam. Non incidunt minima sit, vel est aperiam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt maiores necessitatibus ratione asperiores impedit illum optio reiciendis vel iusto, fugit, minus recusandae ducimus, laboriosam nemo in tenetur architecto! Exercitationem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, excepturi aperiam maiores tempora amet ullam iusto libero voluptates quo autem perferendis qui? Harum minus aliquid nam accusamus sed maxime soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium reiciendis alias recusandae consectetur, cumque omnis voluptas unde optio distinctio aspernatur. Nemo rerum asperiores nihil facere eligendi consequatur minima. Optio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laudantium voluptate veniam itaque quae nesciunt illum quo iure repellendus! Porro, harum modi delectus ea aliquam repellat qui dignissimos enim incidunt!</p>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright 2023. Web Programming Vangogh</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* position */
+/* position merupakan properti untuk mengatur posisi pada suatu elemen html, dan dapat menaikan 1 layer dari elemen lainnya sehingga ketika bergeser ke arah atas, bawah, kanan, kiri elemen yang berdekatan dengan tidak ikut bergeser karena posisinya sudah naik 1 layer dari elemen yang lainnya */
+/* poperti position memiliki beberapa value :
+- static : merupakan value default 
+- relative : untuk menaikan 1 layer kedepan, dan tempat sebelumnya akan menjadi ruang kosong
+- absolute : untuk menaikan 1 layer kedepan, dan tempat sebelumnya akan di isi oleh elemen yang lain karena elemen yang diberikan properti position absolute sudah di anggap tidak ada, dan jika kita geser dengan top, bottom, left, right akan bergeser mengukur diatas body yaitu window, jadi cara mengakalinya dengan menaikkan parent/pembungkusnya 1layer keatas sejajar dengan elemennya
+- fixed : sama seperti value absolute hanya bedanya fixed tidak memperdulikan parent/pembungkusnya lawaupun sejajar layernya, dia fixed dengan layer window. biasanya digunakan untuk membuat tombol bar navigasi yang jika halamannya di scroll dia tetep dengan posisinya tidak berubah */
+
+/* relative */
+
+body {
+  margin: 0;
+  height: 2000px;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.satu {
+  margin-top: 70px;
+  background-color: aqua;
+}
+
+.dua {
+  background-color: pink;
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.tiga {
+  background-color: sandybrown;
+}
+
+/* basolute */
+.bag2 {
+  margin-top: 20px;
+  width: 50px;
+  height: 150px;
+  position: relative;
+}
+
+.empat {
+  background-color: aqua;
+}
+
+.lima {
+  background-color: pink;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.enam {
+  background-color: sandybrown;
+}
+
+/* fixed */
+.tujuh {
+  margin-top: 20px;
+  background-color: aqua;
+}
+
+.delapan {
+  background-color: pink;
+}
+
+.sembilan {
+  width: 100%;
+  height: 50px;
+  background-color: sandybrown;
+  position: fixed;
+  top: 0;
+}

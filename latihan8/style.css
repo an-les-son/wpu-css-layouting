@@ -1,0 +1,106 @@
+/* clear */
+/* clear adalah properti yang digunakan untuk mengilangkan sifat dari float yang keluar dari flow penulisan sistem CSS, menjadi kembali lagi kedalam aturan/flow penulisan sistem CSS.
+value properti dari clear :
+- left : untuk menghilangkan float kiri
+- right : untuk menghilangkan float kanan
+- both : untuk menghilangkan float kiri */
+/* penggunan properti clear menggunakan elemen/tag kosong, biasanya menggunakan tag <div> terus di letakan di akhiran elemen yang menggukan properti float */
+
+.container,
+.container2,
+.container3,
+.container4 {
+  width: 600px;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 100px auto;
+}
+
+.satu {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  float: right;
+}
+
+.dua {
+  width: 50px;
+  height: 50px;
+  background-color: greenyellow;
+}
+
+.tiga {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+
+/* === */
+
+.empat {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  float: left;
+  margin: 10px;
+}
+
+.lima {
+  width: 50px;
+  height: 50px;
+  background-color: greenyellow;
+  float: left;
+  margin: 10px;
+}
+
+.enam {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  float: left;
+  margin: 10px;
+}
+
+/* ==== */
+
+.tujuh {
+  width: 400px;
+  height: 50px;
+  background-color: aqua;
+  float: left;
+}
+
+.delapan {
+  width: 150px;
+  height: 50px;
+  background-color: greenyellow;
+  float: left;
+}
+
+.sembilan {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  float: left;
+}
+
+/* === */
+
+.sepuluh {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  float: left;
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+/* === */
+.clear {
+  clear: both;
+}

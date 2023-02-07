@@ -1,0 +1,61 @@
+/* box model */
+/* digunakan untuk membuat kotak yang dapat disesuaikan ukurannya untuk konten pada halaman html, dan memiliki 4 bagian, yaitu:
+    - margin : area transparan disekitar kotak (diluar border);
+    - border : batas disekeliling konten pada padding;
+    - padding : area transparan di dalam kotak (antara content dan border);
+    - content : konten sebenarnya di dalam box, bisa berupa teks atau gambar */
+/* yang dapat diatur propertinya adalah margin, padding dan border dengan properti :
+- margin-top, margin-right, margin-bottom, margin-left, margin;
+- padding-top, padding-right, padding-bottom, padding-left, padding;
+- border-top, border-right, border-bottom, border-left, border */
+
+.satu {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  margin: 20px auto 10px;
+}
+
+.dua {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+}
+
+.tiga {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+}
+
+/* overlaping : ialah kasus jika bertemunya antar magin dari konten yang berbeda atas, bawah dan kiri, kanan;
+- jika, bertemu atas, bawah atau konten memiliki display block yang di baca oleh sistem CSS adalah nilai margin yang lebih basar
+contohnya :
+margin bawah dari konten diatas : 10px
+margin atas dari konten dibawah : 5px
+yang dibaca oleh sistem CSS adalah nilai 10px
+tetapi jika margin atas dari konten dibawah memiliki value negatif : -5px
+yang terbaca oleh sistem CSS adalah 10px-5px=5px 
+- jika, bertemu kanan, kiri atau konten memiliki display inline-block yang di baca oleh sistem CSS adalah nilai margin kanan + nilai margin kiri
+contohnya :
+margin kanan dari konten disebelah kiri : 5px
+margin kiri dari konten disebelah kanan : 5px
+yang dibaca oleh sistem CSS adalah 5px+5px=10px*/
+
+/*value auto*/
+/*jika, margin memiliki value auto wajib hukumnya memberi value kedua sisi, seperti margin atas dan bawah value auto, dan margin kiri dan kanan value auto.
+nanti sistem CSS akan membaca center dari ukuran parent/ayah/pembungkusnya*/
+
+/* shorthand/penulisan singkat */
+/* - margin : 50px
+sistem membaca 
+margin : atas, bawah, kiri, kanan 50px 
+- margin : 50px 60px
+sistem membaca 
+margin : atas, bawah 50px, kiri, kanan 60px
+- margin : 20px 30px 10px
+sistem membaca
+margin : atas 20px, kiri kanan 30px, bawah 10px
+- margin : 20px 30px 10px 40px
+sistem membaca
+margin : atas 10px, kanan 30px, bawah 10px, kiri 40px*/

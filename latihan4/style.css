@@ -1,0 +1,50 @@
+/* padding */
+/* cara penulisan padding mirip dengan margin hanya bedanya padding tidak bisa diberi value negatif dan auto jika diberi value negatif dan auto sistem CSS tidak akan membacanya.
+ukuran padding mempengaruhi ukuran konten/html, jika konten/elemen memili width 200px dan hight 200px dan padding atas,bawah,kiri,kanan 20px
+jadi, ukuran konten/elemen menjadi
+- width : 200px + 20px + 20px (padding kiri kanan) = 240px
+- hight : 200px + 20px + 20px (padding atas bawah) = 240px*/
+
+/* border */
+/* border adalah garis luar pembungkus konten/element setelah padding dan sebelum margin
+cara penulisan border
+border : width style color;
+border : 2px solid red; 
+- value style untuk border ada beberapa yaitu :
+solid, dotted, dashed, double
+- ukuran border mempengaruhi ukuran konten/html, jika konten/elemen memili width 200px dan hight 200px dan border atas,bawah,kiri,kanan 5px
+jadi, ukuran konten/elemen menjadi
+- width : 200px + 5px + 5px (border kiri kanan) = 210px
+- hight : 200px + 5px + 5px (border atas bawah) = 210px*/
+
+div {
+  width: 300px;
+  height: 300px;
+  background-color: bisque;
+  overflow: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px dashed black;
+}
+
+p {
+  width: 600px;
+  box-sizing: border-box;
+}
+
+.satu {
+  background-color: bisque;
+  margin: 20px auto;
+  padding: 10px;
+  border: 3px solid black;
+}
+
+.dua {
+  background-color: bisque;
+  margin: auto;
+  padding: 5px;
+  border: 3px dotted black;
+}
+
+/* box-sizing */
+/* box-sizing digunakan untuk menetapkan ukuran konten/elemen yang sudah pasti jadi tidak perlu repot repot untuk menghitung ukuran padding dan border untuk memberi ukuran konten/elemen yang kita inginkan */

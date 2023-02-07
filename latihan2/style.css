@@ -1,0 +1,37 @@
+/* dimensi */
+/* dimensi adalah atauran/cara untuk memberi ukuran panjang dan lebar untuk sebuah latar di halaman html dengan properti width dan height */
+/* satuan dalam dimensi (width dan height) adalah : 
+    - px(pixel) : sifatnya absolute pasti;
+    - % percent : sifatnya relative besarannya atau ukurannnya mengikuti parent/pembungkusnya
+    - in,cm,mm,pt,pc */
+/* overflow */
+/* overlow adalah properti elemen yang berfungsi untuk mengatur konten yang keluar dari ukuran properti dimensinya ada 4 value properti dari overflow :
+    - visible : value dafault dari properti overflow;
+    - auto : value yang di gunakan untuk menyesuaikan dimensi konten terhadap dimensi latarnya, jika latarnya lebih kecil dari kontennya properti overflow akan membuat scroll agar kontennya terlihat dengan dimensi latar yang lebih kecil dari kontennya, tetapi jiga dimensi latarnya lebih besar dari dimensi kontennya properti overflow tidak akan membuat scroll;
+    - hidden : value yang di gunakan untuk menghilangkan konten yang melewati dimensi latarnya;
+    - scroll : value yang ini sifatnya sama seperti auto hanya bedanya jika dimensi konten lebih kecil dari dimensi latar properti overflow tetap membuat scroll.*/
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.satu {
+  width: 400px;
+  height: 400px;
+  background-color: blueviolet;
+}
+
+.dua {
+  width: 50%;
+  height: 50%;
+  background-color: bisque;
+}
+
+.tiga {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  overflow: auto;
+}
